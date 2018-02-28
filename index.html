@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <script src="typer.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="half">
+        <h2>Input your text over here</h2>
+
+        <textarea style="width:100%;height:50%;">
+        </textarea>
+        <br>
+        Key pressed:
+        <span id="output_key"></span>
+        <br>
+        Time Taken (in milliseconds)
+        <span id="output_time"></span>
+        <br><br>
+        <button onclick="generate_average()">Generate report</button>
+    </div>
+
+    <div class="other_half">
+        Generated Results:
+        <table id="result">
+            <tr>
+            <th>key</th>
+            <th>average duration</th>
+            </tr>
+            
+        </table>
+    </div>
+    </body>
+
+</html>
